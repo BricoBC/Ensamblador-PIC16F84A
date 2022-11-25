@@ -1,0 +1,220 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/ping_pong.o
+Programa CODE 0 0 0 69 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM C-4D 1
+BANK0 C-4D 1
+CONST 69-3FF 2
+ENTRY 69-3FF 2
+IDLOC 2000-2003 2
+CODE 69-3FF 2
+EEDATA 2100-213F 2
+STRCODE 69-3FF 2
+STRING 69-3FF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/ping_pong.o
+0 Programa CODE >21:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+0 Programa CODE >24:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+1 Programa CODE >27:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+2 Programa CODE >28:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+3 Programa CODE >29:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+4 Programa CODE >30:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+5 Programa CODE >31:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+6 Programa CODE >35:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+7 Programa CODE >36:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+8 Programa CODE >37:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+9 Programa CODE >38:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+A Programa CODE >41:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+B Programa CODE >42:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+C Programa CODE >43:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+D Programa CODE >46:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+E Programa CODE >49:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+F Programa CODE >50:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+10 Programa CODE >51:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+11 Programa CODE >53:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+12 Programa CODE >54:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+13 Programa CODE >55:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+14 Programa CODE >60:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+15 Programa CODE >61:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+16 Programa CODE >62:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+17 Programa CODE >65:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+18 Programa CODE >66:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+19 Programa CODE >67:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+1A Programa CODE >70:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+1B Programa CODE >71:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+1C Programa CODE >72:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+1D Programa CODE >75:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+1E Programa CODE >76:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+1F Programa CODE >77:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+20 Programa CODE >82:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+21 Programa CODE >83:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+22 Programa CODE >84:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+23 Programa CODE >85:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+24 Programa CODE >86:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+25 Programa CODE >88:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+26 Programa CODE >89:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+27 Programa CODE >90:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+28 Programa CODE >91:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+29 Programa CODE >94:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+2A Programa CODE >95:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+2B Programa CODE >96:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+2C Programa CODE >99:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+2D Programa CODE >100:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+2E Programa CODE >101:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+2F Programa CODE >102:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+30 Programa CODE >105:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+31 Programa CODE >106:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+32 Programa CODE >107:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+33 Programa CODE >108:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+34 Programa CODE >115:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+35 Programa CODE >116:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+36 Programa CODE >117:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+37 Programa CODE >120:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+38 Programa CODE >121:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+39 Programa CODE >122:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+3A Programa CODE >124:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+3B Programa CODE >125:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+3C Programa CODE >126:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+3D Programa CODE >127:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+3E Programa CODE >130:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+3F Programa CODE >131:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+40 Programa CODE >132:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+41 Programa CODE >133:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+42 Programa CODE >135:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+43 Programa CODE >136:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+44 Programa CODE >137:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+45 Programa CODE >138:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+46 Programa CODE >142:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+47 Programa CODE >143:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+48 Programa CODE >144:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+49 Programa CODE >147:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+4A Programa CODE >148:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+4B Programa CODE >149:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+4C Programa CODE >151:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+4D Programa CODE >152:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+4E Programa CODE >153:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+4F Programa CODE >154:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+50 Programa CODE >157:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+51 Programa CODE >158:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+52 Programa CODE >159:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+53 Programa CODE >160:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+54 Programa CODE >162:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+55 Programa CODE >163:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+56 Programa CODE >164:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+57 Programa CODE >165:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+58 Programa CODE >169:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+59 Programa CODE >170:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+5A Programa CODE >171:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+5B Programa CODE >173:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+5C Programa CODE >174:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+5D Programa CODE >175:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+5E Programa CODE >177:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+5F Programa CODE >178:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+60 Programa CODE >180:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+61 Programa CODE >181:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+62 Programa CODE >182:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+63 Programa CODE >184:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+64 Programa CODE >185:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+65 Programa CODE >187:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+66 Programa CODE >188:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+67 Programa CODE >189:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+68 Programa CODE >191:D:\UAEMex\9no Semestre\Sistemas digitales\PIC16F84A\Segundo.X\ping_pong.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 69 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4010 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__LPrograma 0 0 ABS 0 Programa -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__HPrograma 0 0 ABS 0 Programa -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

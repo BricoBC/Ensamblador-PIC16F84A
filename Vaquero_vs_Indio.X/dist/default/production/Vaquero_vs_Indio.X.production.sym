@@ -1,0 +1,46 @@
+__S0 0 0 ABS 0
+__S1 0 0 ABS 0
+__S3 0 0 ABS 0
+__Hconfig 2008 0 CONFIG 4
+__Lconfig 0 0 CONFIG 4
+__Hcode 0 0 ABS 0
+__Lcode 0 0 ABS 0
+__Hdata 0 0 ABS 0
+__Ldata 0 0 ABS 0
+__HPrograma 0 0 ABS 0
+__LPrograma 0 0 ABS 0
+__Hudata_bank0 0 0 ABS 0
+__Ludata_bank0 0 0 ABS 0
+__Hedata 0 0 ABS 0
+__Ledata 0 0 ABS 0
+__Hudata 0 0 ABS 0
+__Ludata 0 0 ABS 0
+__Hspace_0 10 0 ABS 0
+__Lspace_0 0 0 ABS 0
+__Hspace_1 0 0 ABS 0
+__Lspace_1 0 0 ABS 0
+__Hspace_3 0 0 ABS 0
+__Lspace_3 0 0 ABS 0
+__Hspace_4 400F 0 ABS 0
+__Lspace_4 0 0 ABS 0
+%segments
+%locals
+build/default/production/juego.o
+juego.s
+9 0 0 CODE 0
+12 0 0 CODE 0
+15 1 0 CODE 0
+16 2 0 CODE 0
+17 3 0 CODE 0
+18 4 0 CODE 0
+19 5 0 CODE 0
+30 6 0 CODE 0
+31 7 0 CODE 0
+34 8 0 CODE 0
+35 9 0 CODE 0
+36 A 0 CODE 0
+37 B 0 CODE 0
+38 C 0 CODE 0
+39 D 0 CODE 0
+41 E 0 CODE 0
+42 F 0 CODE 0
